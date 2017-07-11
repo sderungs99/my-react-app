@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h2>
+      Welcome to React
+    </h2>
+  </div>
+  <div>
+    <p
+      className="App-intro"
+    >
+      To get started, edit 
+      <code>
+        src/App.js
+      </code>
+       and save to reload.
+    </p>
+    <p>
+      <button
+        onClick={[Function]}
+      >
+        Test Button
+      </button>
+    </p>
+    <p>
+      Click Counter: 
+      0
+    </p>
+  </div>
+</div>
+`;
