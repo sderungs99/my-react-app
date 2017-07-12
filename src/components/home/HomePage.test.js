@@ -15,12 +15,12 @@ it('renders as expected', () => {
     const component = renderer.create(
         <HomePage />
     );
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
 
 it('adds up button clicks correctly', () => {
-    let wrapper = setup();
+    const wrapper = setup();
     const expectedClickCounter = wrapper.instance().state.clickCounter + 1;
     wrapper.instance().handleClick();
     expect(wrapper.instance().state.clickCounter).toBe(expectedClickCounter);
