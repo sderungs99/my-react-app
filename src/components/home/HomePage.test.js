@@ -21,8 +21,7 @@ it('renders as expected', () => {
 
 it('adds up button clicks correctly', () => {
     let wrapper = setup();
-    let currentClickCounter = wrapper.instance().state.clickCounter;
-    let expectedClickCounter = currentClickCounter + 1;
+    const expectedClickCounter = wrapper.instance().state.clickCounter + 1;
     wrapper.instance().handleClick();
     expect(wrapper.instance().state.clickCounter).toBe(expectedClickCounter);
 });
